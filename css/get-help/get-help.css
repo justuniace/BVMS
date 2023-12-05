@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --primary-color:#54627b;
+  --secondary-color:#ecd5bb;
+}
+
+body {
+  background-color: var(--primary-color);
+  min-height: 130vh;
+  position: relative;
+  scroll-behavior: smooth;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+}
+body .container .wrapper {
+  background-color: var(--primary-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+body .container .wrapper header {
+  display: flex;
+  padding: 20px 35px;
+  border-bottom: 1px dotted var(--secondary-color);
+}
+body .container .wrapper header .logo {
+  width: 30px;
+  height: 30px;
+}
+body .container .wrapper header h1 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin-left: 15px;
+}
+body .container .img1 {
+  width: 550px;
+  height: 550px;
+  margin-left: 15px;
+}
+body .container .first {
+  position: absolute;
+  margin: 100px;
+  margin-left: 771px;
+}
+body .container .first h2 {
+  color: var(--secondary-color);
+  font-size: 60px;
+}
+body .container .search-wrapper {
+  position: absolute;
+  margin: 200px;
+  margin-left: 780px;
+}
+body .container .search-wrapper .search-box {
+  border-radius: 12px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+body .container .search-wrapper .search-box input {
+  width: 550px;
+  height: 55px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+body .container .search-wrapper .search-box input:focus {
+  outline: none;
+}
+body .container .search-wrapper .search-box .icon {
+  height: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+body .container .topics {
+  position: absolute;
+  width: 45%;
+  max-width: 100%;
+  margin: 400px auto;
+  margin-left: 655px;
+}
+body .container .topics h3 {
+  color: var(--secondary-color);
+  font-size: 25px;
+  margin: 20px;
+}
+body .container .topics .question {
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+body .container .topics .question:focus {
+  outline: none;
+}
+body .container .topics .question:hover {
+  background-color: #ddd;
+}
+body .container .topics .content {
+  padding: 4px 20px;
+  font-size: 20px;
+  max-height: 0;
+  overflow: hidden;
+  justify-content: space-between;
+  transition: max-height 0.3s ease-in-out;
+  color: var(--secondary-color);
+}
+body .container .topics .content a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+body .form {
+  float: right;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding: 5px;
+}
+body .form p {
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+body .form input, body .form textarea {
+  margin: 3px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  color: #ffff;
+}
+body .form input:focus, body .form textarea:focus {
+  outline: none;
+}
+body .form ::-moz-placeholder {
+  color: white;
+}
+body .form :-ms-input-placeholder {
+  color: white;
+}
+body .form ::placeholder {
+  color: white;
+}
+body .form textarea {
+  width: 98%;
+  min-height: 70px;
+}
+body .form button {
+  padding: 2px 10px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+body footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+body footer p {
+  color: var(--secondary-color);
+  font-size: 25px;
+  line-height: 2rem;
+  text-align: center;
+  margin-left: 150px;
+}
+body footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 18px;
+  margin-left: 10px;
+}
+body footer a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=get-help.css.map */

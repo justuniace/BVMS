@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root
+{
+    --primary-color: #54627B;
+    --secondary-color: #ECD5BB;
+    overflow:visible;
+}
+
+body
+{
+    background-color: var(--primary-color);
+
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .options
+        {
+            display: flex;
+            gap: 10px;
+            position: relative;
+            top: 70px;
+            right: 450px;
+
+            .go-back-btn
+            {
+                text-decoration: none;
+                color: rgb(247, 247, 247);
+                background-color: rgb(34, 151, 34);
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: .5px solid rgba(172, 255, 47, 0.616);
+            }
+
+            .save-btn
+            {
+                text-decoration: none;
+                background-color: rgb(43, 184, 0);
+                padding: 10px;
+                border-radius: 15px;
+                color: white;
+                font-size: .9rem;
+            }
+        }
+
+        table
+        {
+            background-color: white;
+            border-collapse: collapse;
+            border-radius: 10px;
+            font-size: 1rem;
+            position: relative;
+            top: 100px;
+
+            thead
+            {
+                tr
+                {
+                    td
+                    {
+                        font-weight: bold;
+                        font-size: 1.05rem;
+                        padding: 25px;
+                        text-align: center;
+                        border-bottom: 2px solid rgb(180, 180, 180);
+                    }
+                }
+            }
+
+            tbody
+            {
+                
+                tr
+                {
+                    border-bottom: 1px solid rgb(180, 180, 180);
+                
+                    td
+                    {
+                        padding: 30px 40px;
+                        text-align: center;
+                    }
+
+                    .btn
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+
+                        .mark-btn
+                        {
+                            padding: 3px 13px;
+                            border-radius: 8px;
+                            color: white;
+                            text-decoration: none;
+                            font-size: 1rem;
+                            background-color: var(--primary-color);
+                            transition: all .3s ease;
+                            cursor: pointer;
+
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --primary-color: #54627B;
+  --secondary-color: #ECD5BB;
+  overflow: visible;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .options {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  top: 70px;
+  right: 450px;
+}
+body .container .options .go-back-btn {
+  text-decoration: none;
+  color: #f7f7f7;
+  background-color: #229722;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(172, 255, 47, 0.616);
+}
+body .container .options .save-btn {
+  text-decoration: none;
+  background-color: #2bb800;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.9rem;
+}
+body .container table {
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  font-size: 1rem;
+  position: relative;
+  top: 100px;
+}
+body .container table thead tr td {
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 2px solid #b4b4b4;
+}
+body .container table tbody tr {
+  border-bottom: 1px solid #b4b4b4;
+}
+body .container table tbody tr td {
+  padding: 30px 40px;
+  text-align: center;
+}
+body .container table tbody tr .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+body .container table tbody tr .btn .mark-btn {
+  padding: 3px 13px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}/*# sourceMappingURL=vacicnated-page.css.map */

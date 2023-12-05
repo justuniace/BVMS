@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root
+{
+    --primary-color: #54627B;
+    --secondary-color: #ECD5BB;
+    overflow:visible;
+}
+
+body
+{
+    background-color: var(--primary-color);
+
+    .container
+    {
+        height: 100vh;
+        .upper
+        {
+            header
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 35px 60px;
+
+                .left-content
+                {
+                    display: flex;
+                
+                    img
+                    {
+                        align-self: center;
+                        width: 30px;
+                        height: 25px;
+                    }
+                    h1
+                    {
+                        color: var(--secondary-color);
+                        margin-left: 10px;
+                    }
+                
+                }
+            
+                .right-content
+                {
+                    display: flex;
+                    margin-right: 200px;
+                    gap: 50px;
+                
+                    ul li
+                    {
+                        list-style: none;
+
+                        a
+                        {   
+                            align-self: center;
+                            color: var(--secondary-color);
+                            margin-right: 10px;
+                            text-decoration: none;
+                            font-size: 1.2rem;
+                            padding: 12px 0px;
+                            border-radius: 4px;
+
+                            &:hover
+                            {
+                                border-bottom: 1px solid var(--secondary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .lower
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .subheader
+            {
+                background-color: white;
+                padding: 10px;
+                width: 95%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                ul 
+                {
+                    display: flex;
+                    gap: 50px;
+                    list-style: none;
+
+                    li a
+                    {
+                        text-decoration: none;
+                        padding: 10px;
+                    }
+
+                    .unvaccinated-h
+                    {
+                        background-color: #e45a5086;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            table
+            {
+                background-color: white;
+                width: 95%;
+                border-bottom: 5px solid #e45a50;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                animation: fade .5s ease-in;
+
+                thead
+                {
+                    tr
+                    {
+                        border-bottom: 2px solid rgb(180, 180, 180);
+
+                        td
+                        {
+                            padding: 20px 50px;
+                            background-color: #e45a50;
+                            width: 300px;
+                            font-size: 1rem;
+                            text-align: center;
+                            color: #414c5f;
+                        }
+                    }
+                }
+
+                tbody
+                {
+                    tr
+                    {
+                        td
+                        {
+                            border-bottom: 1px solid rgba(180, 180, 180, 0.295);
+                            padding: 10px 50px;
+                            width: 300px;
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        transform:translateY(-10px);
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}

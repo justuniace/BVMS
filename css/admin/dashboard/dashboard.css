@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --primary-color: #54627B;
+  --secondary-color: #ECD5BB;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+body .container {
+  height: 100vh;
+}
+body .container .upper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 60px;
+}
+body .container .upper header .left-content {
+  display: flex;
+}
+body .container .upper header .left-content img {
+  align-self: center;
+  width: 30px;
+  height: 25px;
+}
+body .container .upper header .left-content h1 {
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+body .container .upper header .right-content {
+  display: flex;
+  margin-right: 200px;
+  gap: 50px;
+}
+body .container .upper header .right-content ul li {
+  list-style: none;
+}
+body .container .upper header .right-content ul li a {
+  align-self: center;
+  color: var(--secondary-color);
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 12px 0px;
+  border-radius: 4px;
+}
+body .container .upper header .right-content ul li a:hover {
+  border-bottom: 1px solid var(--secondary-color);
+}
+body .container .lower {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  -webkit-animation: fade 0.5s ease-in;
+          animation: fade 0.5s ease-in;
+}
+body .container .lower .left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+body .container .lower .left-content .vaccinated, body .container .lower .left-content .unvaccinated, body .container .lower .left-content .first-dose {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 1px 15px #3f3f3f;
+}
+body .container .lower .left-content .vaccinated .left, body .container .lower .left-content .unvaccinated .left, body .container .lower .left-content .first-dose .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  color: var(--primary-color);
+}
+body .container .lower .left-content .vaccinated .right, body .container .lower .left-content .unvaccinated .right, body .container .lower .left-content .first-dose .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body .container .lower .left-content .vaccinated .right img, body .container .lower .left-content .unvaccinated .right img, body .container .lower .left-content .first-dose .right img {
+  margin-bottom: 30px;
+  width: 15rem;
+}
+body .container .lower .right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+body .container .lower .right-content .total-population, body .container .lower .right-content .new-citizen {
+  padding: 20px;
+  width: 800px;
+  height: 230px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+body .container .lower .right-content .total-population img, body .container .lower .right-content .new-citizen img {
+  width: 100%;
+  height: 5rem;
+}
+body .container .lower .right-content .total-population .new-citizen img, body .container .lower .right-content .new-citizen .new-citizen img {
+  filter: invert(50%);
+}
+
+@-webkit-keyframes fade {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=dashboard.css.map */

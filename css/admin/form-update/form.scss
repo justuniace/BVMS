@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root
+{
+    --primary-color: #54627B;
+    --secondary-color: #ECD5BB;
+}
+
+body
+{
+    background-color: var(--primary-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form
+{
+    animation: fade .5s ease-in;
+
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    box-shadow: 3px 3px 12px rgb(59, 59, 59);
+   // visibility: hidden;
+
+    .personal-info
+    {
+        display: flex;
+        flex-direction: column;
+
+        .name
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            input
+            {
+                border-radius: 10px;
+                width: 250px;
+                border: 1px solid var(--primary-color);
+                padding: 7px 5px;
+            }
+        }
+
+        .drop-down
+        {
+            
+            select
+            {
+                margin-top: 10px;
+                border-radius: 10px;
+                width: 120px;
+                border: 1px solid var(--primary-color);
+                padding: 7px 5px;
+                color: var(--primary-color);
+
+                &:focus
+                {
+                    outline: none;
+                }
+            }
+        }
+
+        .birthday
+        {
+            input
+            {
+                margin-top: 10px;
+                border-radius: 10px;
+                width: 250px;
+                border: 1px solid var(--primary-color);
+                padding: 7px 5px;
+            }
+        }
+    }
+
+    .part-2
+    {
+        display: flex;
+        flex-direction: column;
+        
+        .additional-info
+        {
+            display: flex;
+            flex-direction: column;
+
+            input
+            {
+                margin-top: 10px;
+                border-radius: 10px;
+                width: 250px;
+                border: 1px solid var(--primary-color);
+                padding: 7px 5px;
+            }                    
+        }
+
+        .height-and-weight
+        {
+            display: flex;
+            gap: 10px;
+
+            input
+            {
+                margin-top: 10px;
+                border-radius: 10px;
+                width: 77px;
+                border: 1px solid var(--primary-color);
+                padding: 7px 5px;
+            }        
+        }
+    }
+    
+    .vaccination-details
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        div
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3
+            {
+                color: var(--primary-color);
+            }
+
+            select
+            {
+                margin-top: 10px;
+                border-radius: 10px;
+                width: 120px;
+                border: 1px solid var(--primary-color);
+                padding: 7px 5px;
+                color: var(--primary-color);
+
+                &:focus
+                {
+                    outline: none;
+                }
+            }
+        }
+
+        .update
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .update-btn
+            {
+                margin-top: 20px;
+                padding: 7px 20px;
+                border-radius: 10px;
+                border: none;
+                background-color: var(--primary-color);
+                color: white;
+                transition: all .3s ease;
+
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+
+            .discard-btn
+            {
+                margin-top: 20px;
+                padding: 7px 20px;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                background-color: rgb(201, 2, 2);
+                transition: all .3s ease;
+
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+}
+
+@keyframes fade
+{
+    from
+    {
+        transform:translateY(-10px);
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}

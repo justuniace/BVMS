@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root
+{
+    --primary-color: #54627B;
+    --secondary-color: #ECD5BB;
+    overflow:visible;
+}
+
+body
+{
+    background-color: var(--primary-color);
+
+    .container
+    {
+        height: 100vh;
+        .upper
+        {
+            header
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 35px 60px;
+
+                .left-content
+                {
+                    display: flex;
+                
+                    img
+                    {
+                        align-self: center;
+                        width: 30px;
+                        height: 25px;
+                    }
+                    h1
+                    {
+                        color: var(--secondary-color);
+                        margin-left: 10px;
+                    }
+                
+                }
+            
+                .right-content
+                {
+                    display: flex;
+                    margin-right: 200px;
+                    gap: 50px;
+                
+                    ul li
+                    {
+                        list-style: none;
+
+                        a
+                        {   
+                            align-self: center;
+                            color: var(--secondary-color);
+                            margin-right: 10px;
+                            text-decoration: none;
+                            font-size: 1.2rem;
+                            padding: 12px 0px;
+                            border-radius: 4px;
+
+                            &:hover
+                            {
+                                border-bottom: 1px solid var(--secondary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .lower
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: fade .5s ease-in;
+            margin-top: 30px;
+
+            .options
+            {
+
+                align-self: flex-start;
+                position: relative;
+                margin-top: 15px;
+                bottom: 20px;
+                left: 25px;
+                display: flex;
+                gap: 20px;
+
+                .insert-btn
+                {
+                    text-decoration: none;
+                    color: white;
+                    background-color: rgb(135, 145, 0);
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                    border: .5px solid rgba(229, 255, 0, 0.747);
+                }
+
+                .mark-vaccinated-btn
+                {
+                    text-decoration: none;
+                    color: rgb(247, 247, 247);
+                    background-color: rgb(1, 128, 39);
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                    border: .5px solid rgba(0, 255, 0, 0.747);
+                }
+
+                .mark-firstDose-btn
+                {
+                    text-decoration: none;
+                    color: rgb(247, 247, 247);
+                    background-color: rgb(151, 133, 34);
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                    border: .5px solid rgba(255, 176, 28, 0.747);
+                }
+            }
+
+            table
+            {
+                background-color: white;
+                border-collapse: collapse;
+                border-radius: 10px;
+                font-size: .8rem;
+                width: 98%;
+            
+                thead
+                {
+                    tr
+                    {
+                        td
+                        {
+                            font-weight: bold;
+                            font-size: .8rem;
+                            padding: 15px;
+                            text-align: center;
+                            border-bottom: 2px solid rgb(180, 180, 180);
+                        }
+                    }
+                }
+
+                tbody
+                {
+                    
+                    tr
+                    {
+                        border-bottom: 1px solid rgb(180, 180, 180);
+                    
+                        td
+                        {
+                            padding: 10px 20px;
+                            text-align: center;
+                        }
+
+                        .btn
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+
+                            .update-btn
+                            {
+                                padding: 3px 13px;
+                                border-radius: 8px;
+                                color: white;
+                                text-decoration: none;
+                                font-size: .6rem;
+                                background-color: var(--primary-color);
+                                transition: all .3s ease;
+
+                                &:hover
+                                {
+                                    opacity: .7;
+                                }
+                            }
+
+                            .delete-btn
+                            {
+                                padding: 3px 8px;
+                                border-radius: 8px;
+                                color: white;
+                                text-decoration: none;
+                                font-size: .6rem;
+                                background-color: rgb(194, 0, 0);
+                                transition: all .3s ease;
+
+                                &:hover
+                                {
+                                    opacity: .7;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        transform:translateY(-10px);
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}

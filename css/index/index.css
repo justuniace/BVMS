@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --primary-color: #54627B;
+  --secondary-color: #ECD5BB;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+body .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .container .line {
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  right: 850px;
+  opacity: 0.5;
+}
+body .container .upper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  border-bottom: 1px dotted var(--secondary-color);
+}
+body .container .upper header .left-content {
+  display: flex;
+}
+body .container .upper header .left-content img {
+  align-self: center;
+  width: 30px;
+  height: 25px;
+}
+body .container .upper header .left-content h1 {
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+body .container .upper header .right-content {
+  display: flex;
+}
+body .container .upper header .right-content a {
+  align-self: center;
+  color: var(--secondary-color);
+  margin-right: 10px;
+  text-decoration: none;
+}
+body .container .upper header .right-content img {
+  align-self: center;
+  width: 25px;
+  height: 20px;
+}
+body .container .lower {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-animation: fade 0.5s ease-in;
+          animation: fade 0.5s ease-in;
+}
+body .container .lower .btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  transition: all 0.8s ease;
+}
+body .container .lower .btn button {
+  padding: 20px;
+  width: 200px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+body .container .lower .btn button img {
+  width: 22px;
+  height: 22px;
+}
+body .container .lower .btn .official-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+body .container .lower .btn .official-btn:hover {
+  box-shadow: inset 6.7em 0 0 0 var(--primary-color);
+  color: var(--secondary-color);
+  outline: 1px dotted var(--secondary-color);
+}
+body .container .lower .btn .schedule-btn {
+  background-color: var(--primary-color);
+  outline: 1px dotted var(--secondary-color);
+  color: var(--secondary-color);
+}
+body .container .lower .btn .schedule-btn:hover {
+  box-shadow: inset 7em 0 0 0 var(--secondary-color);
+  color: var(--primary-color);
+  outline: 1px dotted var(--secondary-color);
+}
+body .container .login {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  bottom: 20%;
+  left: 65%;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  box-shadow: 3px 3px 12px #3b3b3b;
+}
+body .container .login .first {
+  color: var(--primary-color);
+}
+body .container .login .second {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+body .container .login .second input {
+  margin: 10px;
+  width: 70%;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid var(--primary-color);
+}
+body .container .login .second input:focus {
+  outline: none;
+}
+body .container .login .third {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+body .container .login .third button {
+  padding: 18px;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+body .container .login .third .back-btn {
+  width: 30%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: white;
+}
+body .container .login .third .login-btn {
+  background-color: var(--primary-color);
+  color: white;
+  width: 60%;
+}
+body .container .form {
+  position: absolute;
+  background-color: white;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50px;
+  top: 25%;
+  left: 60%;
+  box-shadow: 3px 3px 12px #3b3b3b;
+  transition: all 0.5s ease;
+  opacity: 0;
+  padding: 20px;
+}
+body .container .form h1 {
+  color: var(--primary-color);
+}
+body .container .form form {
+  height: 400px;
+  width: 500px;
+  margin-top: 20px;
+}
+body .container .form form .slider {
+  display: flex;
+  width: 400%;
+  transition: all 0.5s ease-in;
+}
+body .container .form form .slider .personal-info {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin-bottom: 50px;
+}
+body .container .form form .slider .personal-info .name {
+  display: flex;
+  flex-direction: column;
+}
+body .container .form form .slider .personal-info .name div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .form form .slider .personal-info .name div input {
+  width: 300px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+}
+body .container .form form .slider .personal-info .name div input:focus {
+  outline: none;
+}
+body .container .form form .slider .personal-info .drop-down {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+body .container .form form .slider .personal-info .drop-down select {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+body .container .form form .slider .personal-info .drop-down select:focus {
+  outline: none;
+}
+body .container .form form .slider .personal-info .drop-down .gender {
+  width: 50%;
+}
+body .container .form form .slider .personal-info .drop-down .status {
+  width: 50%;
+}
+body .container .form form .slider .personal-info .birthday input {
+  width: 300px;
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  margin-top: 15px;
+}
+body .container .form form .slider .personal-info .birthday input:focus {
+  outline: none;
+}
+body .container .form form .slider .personal-info .registration-btn {
+  display: flex;
+  gap: 20px;
+}
+body .container .form form .slider .personal-info .registration-btn button {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--primary-color);
+  margin-top: 15px;
+  color: white;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+body .container .form form .slider .personal-info .registration-btn .r-back-btn {
+  width: 100px;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+body .container .form form .slider .personal-info .registration-btn .r-next-btn {
+  width: 180px;
+}
+body .container .form form .slider .part-2 {
+  width: 500px;
+}
+body .container .form form .slider .part-2 .additional-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .form form .slider .part-2 .additional-info input {
+  width: 300px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+}
+body .container .form form .slider .part-2 .additional-info input:focus {
+  outline: none;
+}
+body .container .form form .slider .part-2 .additional-info .height-and-weight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body .container .form form .slider .part-2 .additional-info .height-and-weight input {
+  width: 90px;
+}
+body .container .form form .slider .part-2 .registration-btn-2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body .container .form form .slider .part-2 .registration-btn-2 button {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--primary-color);
+  margin-top: 15px;
+  color: white;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+body .container .form form .slider .part-2 .registration-btn-2 .r2-back-btn {
+  width: 100px;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+body .container .form form .slider .part-2 .registration-btn-2 .r2-next-btn {
+  width: 180px;
+}
+body .container .form form .slider .vaccination-details {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+body .container .form form .slider .vaccination-details h3 {
+  color: var(--primary-color);
+}
+body .container .form form .slider .vaccination-details div {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .form form .slider .vaccination-details div select {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+body .container .form form .slider .vaccination-details div select:focus {
+  outline: none;
+}
+body .container .form form .slider .vaccination-details .registration-btn-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  top: 40px;
+}
+body .container .form form .slider .vaccination-details .registration-btn-3 input, body .container .form form .slider .vaccination-details .registration-btn-3 button {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+body .container .form form .slider .vaccination-details .registration-btn-3 .r3-back-btn {
+  width: 100px;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+body .container .form form .slider .vaccination-details .registration-btn-3 .r3-submit-btn {
+  width: 180px;
+}
+
+@-webkit-keyframes fade {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --primary-color: #54627b;
+  --secondary-color: #ecd5bb;
+}
+
+body {
+  background-color: var(--primary-color);
+  position: relative;
+}
+body .container {
+  min-height: 220vh;
+  display: flex;
+  flex-direction: column;
+}
+body .container header {
+  background-color: var(--primary-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  border-bottom: 1px dotted var(--secondary-color);
+}
+body .container header .left-content {
+  display: flex;
+}
+body .container header .left-content img {
+  align-self: center;
+  width: 30px;
+  height: 25px;
+}
+body .container header .left-content h1 {
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+body .container header .right-content {
+  display: flex;
+}
+body .container header .right-content a {
+  align-self: center;
+  color: var(--secondary-color);
+  margin-right: 10px;
+  text-decoration: none;
+}
+body .container header .right-content img {
+  align-self: center;
+  width: 25px;
+  height: 20px;
+}
+body .container .lower .img1 {
+  width: 30%;
+  height: 30%;
+  float: right;
+  margin-top: -50px;
+}
+body .container .lower .first {
+  flex-direction: column;
+  display: flex;
+  margin: 100px;
+}
+body .container .lower .first h2 {
+  float: left;
+  font-size: 90px;
+  color: var(--secondary-color);
+}
+body .container .lower .first p {
+  margin: 10px;
+  font-size: 20px;
+}
+body .container .lower .second {
+  flex-direction: column;
+  display: flex;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+body .container .lower .second h3 {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+body .container .lower .second p {
+  margin: 20px;
+  font-size: 20px;
+}
+body .container .lower .third {
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 180px;
+}
+body .container .lower .third h3 {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+body .container .lower .third p {
+  margin: 20px;
+  font-size: 20px;
+}
+body .container .lower .forth {
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 180px;
+}
+body .container .lower .forth h3 {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+body .container .lower .forth p {
+  margin: 20px;
+  font-size: 20px;
+}
+body .container .lower .fifth {
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 180px;
+}
+body .container .lower .fifth h3 {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+body .container .lower .fifth p {
+  margin: 20px;
+  font-size: 20px;
+}
+body .container .lower .sixth {
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  float: right;
+  margin-right: 400px;
+}
+body .container .lower .sixth h3 {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+body .container .lower .sixth p {
+  margin: 20px;
+  font-size: 20px;
+}
+body .container .lower .img2 {
+  width: 20%;
+  height: 20%;
+  float: left;
+  margin-left: 30px;
+}
+body footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  z-index: 1;
+  text-align: center;
+}
+body footer p {
+  color: var(--primary-color);
+  font-size: 20px;
+  line-height: 2rem;
+}
+body footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+body footer a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=privacy.css.map */

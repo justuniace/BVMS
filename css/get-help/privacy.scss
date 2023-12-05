@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+:root 
+{
+  --primary-color: #54627b;
+  --secondary-color: #ecd5bb;
+}
+
+body 
+{
+  background-color: var(--primary-color);
+  position:relative;
+
+    .container
+     {
+      min-height: 220vh;
+      display: flex;
+      flex-direction: column;
+   
+       header 
+       {
+        background-color: var(--primary-color);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 60px;
+        border-bottom: 1px dotted var(--secondary-color);
+
+          .left-content 
+          {
+             display: flex;
+
+             img 
+             {
+               align-self: center;
+               width: 30px;
+               height: 25px;
+             }
+
+             h1 
+             {
+               color: var(--secondary-color);
+               margin-left: 10px;
+             }
+         }
+
+        .right-content 
+        {
+          display: flex;
+
+           a 
+           {
+            align-self: center;
+            color: var(--secondary-color);
+            margin-right: 10px;
+            text-decoration: none;
+           }
+
+          img 
+          {
+              align-self:center;
+              width:25px;
+              height:20px;
+          }
+        }
+       }
+
+      .lower
+      {
+        .img1
+        {
+          width:30%;
+          height:30%;
+          float:right;
+          margin-top: -50px;
+        }
+ 
+        .first
+        {
+            flex-direction: column;
+            display:flex;
+            margin:100px;
+
+            h2
+            {
+              float:left;
+              font-size: 90px;
+              color:var(--secondary-color);
+            }
+
+            p
+            {
+              margin:10px;
+              font-size: 20px;
+            }
+        }
+
+        .second
+        {
+            flex-direction: column;
+            display:flex;
+            margin-top:150px;
+            margin-left: 100px;
+
+            h3
+            {
+              font-size: 40px;
+              color:var(--secondary-color);
+            }
+
+            p
+            {
+              margin:20px;
+              font-size: 20px;
+            }
+        }
+
+        .third
+        {
+            flex-direction: column;
+            display:flex;
+            margin-top:50px;
+            margin-left: 180px;
+
+              h3
+              {
+              font-size: 40px;
+              color:var(--secondary-color);
+              }
+
+             p
+             {
+              margin:20px;
+              font-size: 20px;
+            }
+        }
+
+       .forth
+       {
+          flex-direction: column;
+          display:flex;
+          margin-top:50px;
+          margin-left: 180px;
+
+            h3
+            {
+              font-size: 40px;
+              color:var(--secondary-color);
+            }
+
+            p
+            {
+              margin:20px;
+              font-size: 20px;
+            }
+      }
+
+      .fifth
+      {
+          flex-direction: column;
+          display:flex;
+          margin-top:50px;
+          margin-left: 180px;
+
+            h3
+            {
+              font-size: 40px;
+              color:var(--secondary-color);
+            }
+
+            p
+            {
+              margin:20px;
+              font-size: 20px;
+            }
+     }
+          
+    .sixth
+    {
+       flex-direction: column;
+       display:flex;
+      margin-top:50px;
+      float:right;
+      margin-right: 400px;;
+
+            h3
+            {
+              font-size: 30px;
+              color:var(--secondary-color);
+            }
+
+            p
+            {
+              margin:20px;
+              font-size: 20px;
+            }
+    }
+          
+     .img2
+     {
+            width:20%;
+            height:20%;
+            float:left;
+            margin-left: 30px;
+
+     }
+   }
+ } 
+ footer 
+ {
+     position:absolute;
+     width:100%;
+     bottom:0;
+
+         p 
+         {
+             color:var(--primary-color);
+             font-size:25px;
+             line-height: 2rem;
+             text-align: center;
+             margin-left: 150px;
+         }
+
+         a 
+         {
+             text-decoration:none;
+             color:var(--secondary-color);
+             font-size: 18px;
+             margin-left: 10px;
+
+             &:hover 
+             {
+                 text-decoration: underline;
+             }
+         }
+ }
+}
+
